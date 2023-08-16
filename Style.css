@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: "Poppins", "sans-serif";
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)), url(image1.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.form-box{
+    background: white;
+    text-align: center;
+    width: 90%;
+    max-width:450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 40px;
+    
+}
+
+.form-box h1{
+    color: green;
+    margin-bottom: 30px;
+    font-size: 30px;
+    position: relative;
+}
+.form-box h1::after{
+    content: ' ';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: green;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform:translateX(-50%) ;
+}
+.input-field{
+    background-color:bisque;
+    margin: 15px 0;
+    align-items: center;
+    border-radius: 10px;
+    display:flex;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color:brown;
+}
+form p{
+    font-size: 15px;
+    color: red;
+    text-align: left;
+
+}
+form p a{
+    text-decoration:underline;
+    color: red;
+}
+.btn-field{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.btn-field button{
+    background:green;
+    color:#fff;
+    flex-basis: 40%;
+    border-radius: 20px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 100;
+    border: 0;
+    outline: 0;
+    transition: background 0.5s;
+}
+.btn-field button.disable{
+    background:#eaeaea;
+    color: #555;
+}
